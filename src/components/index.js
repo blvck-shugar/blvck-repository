@@ -1,0 +1,7 @@
+export * from './Headers'
+export * from './Body'
+export * from './Footers'
+export * from './skills'
+export * from './certificates'
+export * from './gallery'
+export * from './case'

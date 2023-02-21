@@ -1,0 +1,427 @@
+ html body{
+    /* background-color: #000000; */
+    border-radius: 15px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    width: 100%;
+}
+#dark .big-nav{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    /* background-color: aqua; */
+}
+#dark .nav1{
+    display:flex; 
+    margin-top:25px;
+}
+
+#dark .logo-box{
+    width:272px;
+    height:142px;
+    position:relative;
+}
+.logo{
+    width:100%;
+    height:100%;
+    position:absolute;
+    right:37px;
+}
+.logo2{
+    width:50%;
+    height:70%;
+    position:absolute;
+    right:99px;
+    top: 18px;
+}
+
+#dark .logo-word{
+    position:absolute;
+    width: 270px;
+    height: 61px;
+    left: 158px;
+    top: 65px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.27em;
+    
+    color: #d4af37;
+}
+#dark .title{
+    width: 250px;
+    height: 100px;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 35px;
+    display:flex;
+    align-items:center;
+    text-align: right;
+    letter-spacing: 0.055em;
+    margin-right:50px;
+    margin-top:55px;
+    color: #D4AF37;
+}
+#dark .App-logo {
+    height: 40vmin;
+    cursor: pointer;
+    width:125px;
+    height:200px;
+    margin-top:20px;
+    margin-left:360px;
+  } 
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  
+   @keyframes App-logo-spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  } 
+ #dark .main-body{
+    position:relative;
+    display:flex;
+    justify-content:space-around;
+   
+  }
+  #dark .side-links{
+    font-family:poppins;
+    font-style:normal;
+    font-size:24px;
+    position:absolute;
+    width:668px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    color: #FFFFFF;
+    transform: rotate(90deg);
+    left:950px;
+    right:0px;
+    top:320px;
+    letter-spacing: 0.055em;
+  }
+ 
+#dark .stack{
+    width: 334px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 28px;
+    text-align: left;
+    letter-spacing: 0.055em;
+    margin-left:18px;
+    margin-top:700px;
+}
+#dark .web{
+    font-size:23px; 
+    font-weight:500;
+    letter-spacing:0.055em;
+     color:#c0c0c0;
+      margin-top:0px;
+}
+#dark .stac{
+    color: #d4af37;
+     font-size:23px;
+      font-weight:700px;
+} 
+.gif-box{
+    position: fixed;
+    width: 130px;
+    height: 150px;
+    top: 320px;
+    left: -12px;
+    right: 0px;
+    transform: rotate(-90deg);
+    
+}
+.home-gif{
+    width: 100%;
+    height: 100%;
+}
+.photo-box{
+    position:absolute;
+    z-index:1;
+    right:300px;
+    
+}
+#dark .big-photo-box:hover{
+    border-radius: 10px;
+    background-color: rgba(24, 19, 3, 0.6);
+}
+
+@media all and (min-width: 960px) {
+#dark .flick:hover {
+		-webkit-animation: tvflicker .2s infinite alternate; 
+		-moz-animation:    tvflicker .5s infinite alternate; 
+		-o-animation:      tvflicker .5s infinite alternate; 
+		animation:         tvflicker .5s infinite alternate; 
+        
+	}
+
+	@-webkit-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(212, 175, 55, 0.4); }
+	  100% { box-shadow: 0 0 95px 0  rgba(212, 175, 55, 0.4); }
+	}
+	@-moz-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0  rgba(212, 175, 55, 0.4); }
+	  100% { box-shadow: 0 0 60px 0  rgba(212, 175, 55, 0.4); }
+	}
+	@-o-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0  rgba(212, 175, 55, 0.4); }
+	  100% { box-shadow: 0 0 60px 0  rgba(212, 175, 55, 0.4); }
+	}
+	@keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0  rgba(212, 175, 55, 0.4); }
+	  100% { box-shadow: 0 0 60px 0  rgba(212, 175, 55, 0.4); }
+	}
+}
+#dark .game-btn{
+  background-color: rgba(212, 175, 55, 0.8);
+  padding: 5px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-break: normal;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 3px #D4AF37;
+  
+}
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+.ellipse2{
+  position:absolute;
+  right:220px;
+   bottom:6px;
+}
+.home-icons{
+  width:10%;
+  margin-right:18px;
+  margin-top:700px;
+}
+
+
+
+  
+  /* light mode */
+  .big-photo-box{
+    margin-right: 65px;
+  }
+
+ #light .big-photo-box{
+    background-color: rgba(255, 255, 255, 0.99);
+}
+
+@media all and (min-width: 960px) {
+#light .flick:hover {
+		-webkit-animation: tvflick .2s infinite alternate; 
+		-moz-animation:    tvflick .5s infinite alternate; 
+		-o-animation:      tvflick .5s infinite alternate; 
+		animation:         tvflick .5s infinite alternate; 
+        
+	}
+
+	@-webkit-keyframes tvflick {
+	  0%   { box-shadow: 0 0 100px 0 rgba(101, 101, 255, 0.8); }
+	  100% { box-shadow: 0 0 95px 0  rgba(101, 101, 255, 0.8); }
+	}
+	@-moz-keyframes tvflick {
+	  0%   { box-shadow: 0 0 100px 0  rgba(101, 101, 255, 0.8); }
+	  100% { box-shadow: 0 0 60px 0  rgba(101, 101, 255, 0.8); }
+	}
+	@-o-keyframes tvflick {
+	  0%   { box-shadow: 0 0 100px 0  rgba(101, 101, 255, 0.8); }
+	  100% { box-shadow: 0 0 60px 0  rgba(101, 101, 255, 0.8); }
+	}
+	@keyframes tvflick {
+	  0%   { box-shadow: 0 0 100px 0  rgba(101, 101, 255, 0.8); }
+	  100% { box-shadow: 0 0 60px 0  rgba(101, 101, 255, 0.8); }
+	}
+}
+
+#light .game-btn{
+  background-color: rgba(101, 101, 255, 0.8);
+  padding: 5px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-break: normal;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 3px #6565ff;
+  
+}
+  #light .stac{
+    color: #6565ff;
+    font-size:23px;
+    font-weight:700px;
+} 
+  #light .web{
+    font-size:23px; 
+    font-weight:500;
+    letter-spacing:0.055em;
+     color:#333333;
+      margin-top:0px;
+}
+  #light .stack{
+    width: 334px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 28px;
+    text-align: left;
+    letter-spacing: 0.055em;
+    margin-left:18px;
+    margin-top:700px;
+    color: #000000;
+}
+
+  #light .main-body{
+    position:relative;
+    display:flex;
+    justify-content:space-around;
+    background-color: #FFFFFF;
+  }
+  #light .side-links{
+    font-family:poppins;
+    font-style:normal;
+    font-size:25px;
+    font-weight: 500;
+    position:absolute;
+    width:668px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    color: #000000;
+    transform: rotate(90deg);
+    left:950px;
+    right:0px;
+    top:320px;
+    letter-spacing: 0.055em;
+  }
+  #light .big-nav{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    background-color: #FFFFFF;
+}
+/* html body #light{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+} */
+#light .nav1{
+    display:flex; 
+    margin-top:25px;
+}
+#light .logo-box{
+    width:272px;
+    height:142px;
+    position:relative;
+}
+#light .logo-word{
+    position:absolute;
+    width: 270px;
+    height: 61px;
+    left: 158px;
+    top: 65px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.27em;
+    
+    color: #6565ff;
+}
+#light .title{
+    width: 250px;
+    height: 100px;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 35px;
+    display:flex;
+    align-items:center;
+    text-align: right;
+    letter-spacing: 0.055em;
+    margin-right:50px;
+    margin-top:55px;
+    color: rgb(101, 101, 255);
+}
+#light .App-logo {
+    height: 40vmin;
+    cursor: pointer;
+    width:125px;
+    height:200px;
+    margin-top:20px;
+    margin-left:360px;
+  } 
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  
+   @keyframes App-logo-spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  } 

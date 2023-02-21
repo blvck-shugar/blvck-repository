@@ -1,0 +1,6 @@
+export * from "./About"
+export * from "./Game"
+export * from "./Home"
+export * from "./Projects"
+export * from "./Loader"
+export * from "./contact"

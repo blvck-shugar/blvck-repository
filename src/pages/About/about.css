@@ -1,0 +1,530 @@
+html body{
+  /* background-color: #000000; */
+  border-radius: 15px;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  width: 100%;
+}
+#dark{
+    background-color: #000000;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+#dark .App-logo {
+    height: 40vmin;
+    cursor: pointer;
+    width:125px;
+    height:200px;
+    margin: auto;
+    margin-top:20px;
+  } 
+ .about-profile{
+    width: 631px;
+    height: 215px;
+    margin: auto;
+    margin-top: 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+.profile-image-box{
+    width: 215px;
+    height: 100%;
+}
+#dark .pib1{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 4px solid #d4af37;
+    border-radius: 100px;
+}
+#dark .pib2{
+    width: 95%;
+    height: 95%;
+    background:url('../../../public/images/aesthetics/about-profile.jpg') ;
+    /* object-fit: contain; */
+    background-size: cover;
+    background-position-y: 60%;
+    border: 6px solid  #FFFFFf;
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+}
+#dark .profile-con{
+    margin-top: 29px;
+    margin-bottom: 29px;
+    
+}
+#dark .profile-con h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    /* line-height: 69px; */
+    color: #F1F2F4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  
+}
+#dark .profile-con p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    /* line-height: 33px; */
+    color: #A3ABB2;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+#dark .about-icons{
+    width: 222px;
+    margin-top: 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+}
+#dark .about-head{
+    margin-top: 0px;
+    background-color: #000000;
+    padding: 0px;
+  }
+  .experience{
+    width: 634px;
+    margin: auto;
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:90px;
+    padding: 20px 2px;
+  }
+ #dark .exp{
+    display: flex;
+    flex-direction: column;
+    width: 148px;
+    column-gap: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #A3ABB2;
+  }
+
+ #dark .exp p span{
+    font-size: 25px;
+    color: #d4af37;
+  }
+  .reachout-bttn{
+    display:flex;
+    width: 618px;
+    height: 80px;
+    margin: auto;
+    margin-top: 47px;
+    gap: 38px;
+   
+
+  }
+  .reach-div{
+    width: 290px;
+    height: 80px;
+  }
+  .reach-div button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+ #dark .d-cv{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #3D3D3D;
+    background-color: #d4af37;
+  }
+ #dark .c-m{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    
+    text-align: center;
+    letter-spacing: -0.500211px;
+    box-shadow: 0px 2px 5px 5px #d4af37;
+    background-color: #141414;
+    color: #A3ABB2;
+  }
+  #dark .c-m:active{
+    transform: translateY(14%);
+  }
+
+ #dark .ig-nav{
+    width: 1000px;
+    height: 132px;
+    margin: auto;
+    margin-top: 83px;
+    border-radius: 20px;
+    background-color: #000000;
+    box-shadow: 0px 1px 5px 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+#dark .ig-nav div{
+    background-color: rgb(22, 22, 22);
+    width: 30%;
+    display: grid;
+    place-items: center;
+    height: 80px;
+    border-radius: 10px;
+ }
+#dark .gallery{
+    width: 1000px;
+    height: 100vw;
+    margin: auto;
+    margin-top: 65px;
+    position: relative;
+   
+ }
+#dark .skill-gall{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+#dark .box{
+    position: relative;
+    height: 226px;
+    width: 295px;
+    margin-bottom: 48px;
+    border-radius: 15px;
+    background-color: #0c0c0c;
+    --b:4px;  
+    --c:20px;  
+    
+    --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+    
+    transition: 0.5s;
+    border: solid transparent;
+    border-width:var(--b) var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b));
+    background:
+      linear-gradient(-45deg,transparent var(--g),rgba(212,175,55,0.6) 0) left  /var(--c) 100%,
+      linear-gradient(135deg,transparent var(--g),rgba(212,175,55,0.4) 0) bottom /100% var(--c),
+      conic-gradient(from -90deg at top var(--b)   right var(--b),rgba(22, 22, 22,0.9) 270deg,transparent 0),
+      conic-gradient(from  90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)),rgba(22, 22, 22,0.9) 270deg,transparent 0) ;
+    background-repeat:no-repeat;
+    background-origin:border-box;
+    transform:translate(calc(var(--c)/-1),calc(var(--c)/1));
+    clip-path: 
+      polygon(var(--c) 0%, var(--c) 0%, 
+      100% 0%, 
+      100% calc(100% - var(--c)),100% calc(100% - var(--c)),
+      var(--c) calc(100% - var(--c)),
+      var(--c) calc(100% - var(--c)));
+    
+}
+#dark .box:hover .overlay{
+    display: none;
+}
+
+#dark .box:hover{
+    transform:translate(0,0);
+    clip-path: 
+      polygon(0% var(--c), var(--c) 0%, 
+      100% 0%, 
+      100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 
+      0% 100%,0% 100%);
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 326px;
+    width: 395px;
+    top: 0;
+}
+
+.overlay:hover{
+    display: none;
+}
+#dark .box1{
+    position: relative;
+   
+    width: 395px;
+    margin-bottom: 48px;
+    border-radius: 15px;
+    background-color: #0c0c0c;
+    height: 326px;
+
+    background:
+    linear-gradient(#d4af37 0 0) 0 100%,
+    linear-gradient(#d4af37 0 0) 0 100%,
+    linear-gradient(#d4af37 0 0) 100% 0,
+    linear-gradient(#d4af37 0 0) 100% 0;
+    background-size: 20px 5px, 5px 20px;
+    background-repeat:no-repeat;
+    transition: 1.5s;
+}
+ .box:hover{
+    background-position: 100% 100%, 0 0, 0 0, 100% 100%;
+}
+.box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+.box1:hover .overlay{
+    display: none;
+}
+#dark .intro{
+    margin: auto;
+    text-align: center;
+    color: #A3ABB2;
+}
+.intro h2{
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;  
+}
+.intro p{
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+
+
+
+
+/* Light Mode */
+
+#light .intro{
+    margin: auto;
+    text-align: center;
+    color: #141414;
+}
+#light .box1{
+    position: relative;
+   
+    width: 395px;
+    margin-bottom: 48px;
+    border-radius: 15px;
+    background-color: rgb(202, 202, 202);
+    height: 326px;
+
+    background:
+    linear-gradient(#6565ff 0 0) 0 100%,
+    linear-gradient(#6565ff 0 0) 0 100%,
+    linear-gradient(#6565ff 0 0) 100% 0,
+    linear-gradient(#6565ff 0 0) 100% 0;
+    background-size: 20px 5px, 5px 20px;
+    background-repeat:no-repeat;
+    transition: 1.5s;
+}
+#light .gallery{
+    width: 1000px;
+    margin: auto;
+    margin-top: 65px;
+    position: relative;
+    height: 100vw;
+ }
+#light .skill-gall{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-between;
+     background-color: #FFFFFf; 
+ }
+
+#light .box{
+    position: relative;
+    height: 226px;
+    width: 295px;
+    margin-bottom: 48px;
+    border-radius: 15px;
+    background-color: rgb(202, 202, 202);
+    --b:4px;  
+    --c:20px;  
+    
+    --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+    
+    transition: 0.5s;
+    border: solid transparent;
+    border-width:var(--b) var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b));
+    background:
+      linear-gradient(-45deg,transparent var(--g),rgba(101, 101, 255,0.6) 0) left  /var(--c) 100%,
+      linear-gradient(135deg,transparent var(--g),rgba(101, 101, 255,0.4) 0) bottom /100% var(--c),
+      conic-gradient(from -90deg at top var(--b)   right var(--b),rgba(202, 202, 202,0.9) 270deg,transparent 0),
+      conic-gradient(from  90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)),rgba(202, 202, 202,0.9) 270deg,transparent 0) ;
+    background-repeat:no-repeat;
+    background-origin:border-box;
+    transform:translate(calc(var(--c)/-1),calc(var(--c)/1));
+    clip-path: 
+      polygon(var(--c) 0%, var(--c) 0%, 
+      100% 0%, 
+      100% calc(100% - var(--c)),100% calc(100% - var(--c)),
+      var(--c) calc(100% - var(--c)),
+      var(--c) calc(100% - var(--c)));
+    
+}
+#light .box:hover .overlay{
+    display: none;
+}
+
+#light .box:hover{
+    transform:translate(0,0);
+    clip-path: 
+      polygon(0% var(--c), var(--c) 0%, 
+      100% 0%, 
+      100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 
+      0% 100%,0% 100%);
+}
+#light .ig-nav{
+    width: 1000px;
+    height: 132px;
+    margin: auto;
+    margin-top: 83px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 5px 5px rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+#light .ig-nav div{
+    background-color: #cacaca;
+    width: 30%;
+    display: grid;
+    place-items: center;
+    height: 80px;
+    border-radius: 10px;
+ }
+#light .d-cv{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #3D3D3D;
+    background-color: rgb(101, 101, 255);
+  }
+ #light .c-m{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    
+    text-align: center;
+    letter-spacing: -0.500211px;
+    background: #F1F2F4;
+    box-shadow: 0px 2px 5px 5px #6565ff;
+    color: #141414;
+  }
+
+
+#light .exp{
+    display: flex;
+    flex-direction: column;
+    width: 148px;
+    column-gap: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #141414;
+  }
+
+ #light .exp p span{
+    font-size: 25px;
+    color: #6565ff;
+  }
+
+  #light .App-logo {
+    height: 40vmin;
+    cursor: pointer;
+    width:125px;
+    height:200px;
+    margin: auto;
+    margin-top:20px;
+  } 
+  #light .about-head{
+    margin-top: 0px;
+    background-color: #FFFFFf;
+  }
+  #light .pib1{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 4px solid #6565ff;
+    border-radius: 100px;
+}
+#light .pib2{
+    width: 95%;
+    height: 95%;
+    background:url('../../../public/images/aesthetics/about-profile.jpg') ;
+    /* object-fit: contain; */
+    background-size: cover;
+    background-position-y: 60%;
+    border: 6px solid   #131313;
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+}
+#light .profile-con{
+    margin-top: 29px;
+    margin-bottom: 29px;
+    
+}
+#light .profile-con h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    /* line-height: 69px; */
+    color: #141414;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  
+}
+#light .profile-con p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    /* line-height: 33px; */
+    color: #131313;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+#light .about-icons{
+    width: 222px;
+    margin-top: 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+}
+.about-icons{
+  cursor: pointer;
+}

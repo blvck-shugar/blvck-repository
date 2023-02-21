@@ -1,0 +1,112 @@
+html body{
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+/* height: fit-content; */
+}
+ ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+   ::-webkit-scrollbar-track {
+    background:black; 
+  }
+   
+  /* Handle */
+   ::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+    
+  }
+  
+  /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+    background:rgba( 212, 175, 55,0.5);
+  }
+
+
+  #dark .right{
+    position:absolute;
+      text-align:center;
+      bottom:0;
+      left:45%;
+      font-size: 17px;
+      color: rgb(187, 187, 187);
+      font-style: oblique;
+
+  }
+  #light .right{
+    position:absolute;
+      text-align:center;
+      bottom:0;
+      left:45%;
+      font-size: 17px;
+      color: rgb(37, 37, 37);
+      font-style: oblique;
+
+  }
+  .link-edit {
+    text-decoration: none;
+    color: inherit;
+  }
+  #dark .back-bttn{
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    transform: translateY(80%);
+    margin-left: 30px;
+    font-size: 17px;
+    background-color: white;
+    cursor: pointer;
+    color: rgba(212, 175, 55, 0.5);
+    box-shadow: 0px 0px 2px 3px rgba(212, 175, 55, 0.4);
+  }
+  #dark .back-bttn:active{
+    transform: translateY(90%);
+    color: rgba(0, 0, 0, 0.5);
+  }
+  #light .back-bttn{
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    transform: translateY(80%);
+    margin-left: 30px;
+    font-size: 17px;
+    background-color: black;
+    cursor: pointer;
+    color:  rgba(101, 101, 255,0.5);
+    box-shadow: 0px 0px 2px 3px rgba(101, 101, 255,0.6);
+  }
+  #light .back-bttn:active{
+    transform: translateY(90%);
+    color:rgba(215, 215, 215, 0.5);
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+@media(max-width:720px){
+  #dark .back-bttn{
+    padding: 8px 20px;
+    border: none;
+  }
+  #dark .back-bttn:active{
+    transform: translateY(70%);
+  
+  }
+  #light .back-bttn{
+    padding: 8px 20px;
+    border: none;
+  }
+  #light .back-bttn:active{
+    transform: translateY(70%);
+  }
+}
+@media(max-width:480px){
+  
+}
+@media(max-width:360px){
+  
+}

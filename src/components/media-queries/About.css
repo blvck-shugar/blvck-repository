@@ -1,0 +1,635 @@
+@media(max-width:1024px){
+    #dark .ig-nav{
+        max-width: 800px;
+        min-width: 480px;
+        height: 132px;
+        margin: auto;
+        margin-top: 83px;
+        border-radius: 20px;
+        background-color: #000000;
+        box-shadow: 0px 1px 5px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+     }
+    #dark .ig-nav div{
+        background-color: rgb(22, 22, 22);
+        width: 25%;
+        display: grid;
+        place-items: center;
+        height: 70px;
+        border-radius: 10px;
+     }
+     #dark .gallery{
+       max-width: 950px;
+       min-width: 400px;
+        height: 100vw;
+        margin: auto;
+        margin-top: 65px;
+        position: relative;
+     }
+    #dark .skill-gall{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+         justify-content: space-between;
+        
+        
+     }
+     #dark .box{
+        position: relative;
+        max-height: 190px;
+        min-height: 100px;
+        max-width: 225px;
+        min-width: 155px;
+        margin-bottom: 48px;
+        border-radius: 15px;
+        background-color: #0c0c0c;
+        --b:4px;  
+        --c:20px;  
+        
+        --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+        
+        transition: 0.5s;
+        border: solid transparent;
+        border-width:var(--b) var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b));
+        background:
+          linear-gradient(-45deg,transparent var(--g),rgba(212,175,55,0.6) 0) left  /var(--c) 100%,
+          linear-gradient(135deg,transparent var(--g),rgba(212,175,55,0.4) 0) bottom /100% var(--c),
+          conic-gradient(from -90deg at top var(--b)   right var(--b),rgba(22, 22, 22,0.9) 270deg,transparent 0),
+          conic-gradient(from  90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)),rgba(22, 22, 22,0.9) 270deg,transparent 0) ;
+        background-repeat:no-repeat;
+        background-origin:border-box;
+        transform:translate(calc(var(--c)/-1),calc(var(--c)/1));
+        clip-path: 
+          polygon(var(--c) 0%, var(--c) 0%, 
+          100% 0%, 
+          100% calc(100% - var(--c)),100% calc(100% - var(--c)),
+          var(--c) calc(100% - var(--c)),
+          var(--c) calc(100% - var(--c)));
+        
+    }
+    #dark .box:hover .overlay{
+        display: none;
+    }
+    
+    #dark .box:hover{
+        transform:translate(0,0);
+        clip-path: 
+          polygon(0% var(--c), var(--c) 0%, 
+          100% 0%, 
+          100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 
+          0% 100%,0% 100%);
+    }
+    #dark .box1{
+        position: relative;
+        max-width: 350px;
+        min-width: 250px;
+        margin-bottom: 48px;
+        border-radius: 15px;
+        background-color: #0c0c0c;
+        max-height: 326px;
+        min-height: 260px;
+    
+        background:
+        linear-gradient(#d4af37 0 0) 0 100%,
+        linear-gradient(#d4af37 0 0) 0 100%,
+        linear-gradient(#d4af37 0 0) 100% 0,
+        linear-gradient(#d4af37 0 0) 100% 0;
+        background-size: 20px 5px, 5px 20px;
+        background-repeat:no-repeat;
+        transition: 1.5s;
+    }
+     .box:hover{
+        background-position: 100% 100%, 0 0, 0 0, 100% 100%;
+    }
+    .box1 img{
+        width: 100%;
+        height: 100%;
+        object-fit:contain;
+    }
+    .box1:hover .overlay{
+        display: none;
+    }
+    #dark .intro{
+        margin: auto;
+        text-align: center;
+        color: #A3ABB2;
+    }
+
+    /* LIGHT MODE */
+
+    #light .ig-nav{
+        max-width: 800px;
+        min-width: 480px;
+        height: 132px;
+        margin: auto;
+        margin-top: 83px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 1px 5px 5px rgb(44, 44, 44);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+     }
+    #light .ig-nav div{
+        background-color: #cacaca;
+        width: 25%;
+        display: grid;
+        place-items: center;
+        height: 70px;
+        border-radius: 10px;
+     }
+     #light .gallery{
+       max-width: 950px;
+       min-width: 400px;
+        height: 100vw;
+        margin: auto;
+        margin-top: 65px;
+        position: relative;
+     }
+    #light .skill-gall{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+         justify-content: space-between;
+        
+        
+     }
+     #light .box{
+        position: relative;
+        max-height: 190px;
+        min-height: 100px;
+        max-width: 225px;
+        min-width: 155px;
+        margin-bottom: 48px;
+        border-radius: 15px;
+        background-color: rgb(202, 202, 202);
+        --b:4px;  
+        --c:20px;  
+        
+        --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+        
+        transition: 0.5s;
+        border: solid transparent;
+        border-width:var(--b) var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b));
+        background:
+          linear-gradient(-45deg,transparent var(--g),rgba(101, 101, 255,0.6) 0) left  /var(--c) 100%,
+          linear-gradient(135deg,transparent var(--g),rgba(101, 101, 255,0.4) 0) bottom /100% var(--c),
+          conic-gradient(from -90deg at top var(--b)   right var(--b),rgba(202, 202, 202,0.9) 270deg,transparent 0),
+          conic-gradient(from  90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)),rgba(202, 202, 202,0.9) 270deg,transparent 0) ;
+        background-repeat:no-repeat;
+        background-origin:border-box;
+        transform:translate(calc(var(--c)/-1),calc(var(--c)/1));
+        clip-path: 
+          polygon(var(--c) 0%, var(--c) 0%, 
+          100% 0%, 
+          100% calc(100% - var(--c)),100% calc(100% - var(--c)),
+          var(--c) calc(100% - var(--c)),
+          var(--c) calc(100% - var(--c)));
+        
+    }
+    #light .box:hover .overlay{
+        display: none;
+    }
+    
+    #light .box:hover{
+        transform:translate(0,0);
+        clip-path: 
+          polygon(0% var(--c), var(--c) 0%, 
+          100% 0%, 
+          100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 
+          0% 100%,0% 100%);
+    }
+    #light .box1{
+        position: relative;
+        max-width: 350px;
+        min-width: 250px;
+        margin-bottom: 48px;
+        border-radius: 15px;
+        background-color: rgb(202, 202, 202);
+        max-height: 326px;
+        min-height: 260px;
+    }
+
+    #light .intro{
+        margin: auto;
+        text-align: center;
+        color: #A3ABB2;
+    }
+}
+@media(max-width:720px){
+    #dark .gallery{
+        max-width: 550px;
+        min-width: 400px;
+         margin-top: 55px;
+      }
+      #dark .ig-nav{
+        max-width: 600px;
+        min-width: 360px;
+        height: 100px;
+     }
+    #dark .ig-nav div{
+        width: 20%;
+     }
+     .about-profile{
+        width: 65%;
+        height: 215px;
+      }
+    .profile-image-box{
+        width: 45%;
+        height: 100%;
+       
+    }
+    #dark .profile-con{
+        margin-top: 29px;
+        margin-bottom: 29px;
+        width: 50%;
+        
+    }
+    #dark .profile-con h1{
+        font-size: 36px;
+      
+    }
+    #dark .profile-con p{
+        font-size: 17px;
+    }
+    #dark .about-icons{
+        width: 200px;
+        gap: 24px;
+    }
+      .experience{
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+        gap:80px;
+        padding: 20px 2px;
+      }
+     #dark .exp{
+        font-size: 20px;
+        line-height: 30px;
+      }
+    
+     #dark .exp p span{
+        font-size: 23px;
+      }
+      .reachout-bttn{
+        width: 75%;
+        height: 60px;
+        margin-top: 30px;
+        gap: 30px;
+      }
+      .reach-div{
+        width: 45%;
+        height: 60px;
+      }
+     #dark .d-cv{
+        font-size: 20px;
+        line-height: 30px;
+      }
+     #dark .c-m{
+        font-size: 20px;
+        line-height: 30px;
+      }
+      #dark .c-m:active{
+        transform: translateY(12%);
+      }
+      #dark .box{
+        position: relative;
+        max-height: 190px;
+        min-height: 100px;
+        width: 40%;
+        margin-bottom: 40px;
+        border-radius: 15px;
+        
+    }
+    #dark .box1{
+        position: relative;
+        max-width: 45%;
+        min-width: 40%;
+        margin-bottom: 40px;
+    }
+
+    /* LIGHT */
+    #light .ig-nav{
+      max-width: 600px;
+      min-width: 360px;
+      height: 100px;
+   }
+   #light .gallery{
+    max-width: 550px;
+    min-width: 400px;
+     margin-top: 55px;
+  }
+  #light .ig-nav{
+    max-width: 600px;
+    min-width: 360px;
+    height: 100px;
+ }
+#light .ig-nav div{
+    width: 20%;
+ }
+ .about-profile{
+    width: 65%;
+    height: 215px;
+  }
+.profile-image-box{
+    width: 45%;
+    height: 100%;
+   
+}
+#light .profile-con{
+    margin-top: 29px;
+    margin-bottom: 29px;
+    width: 50%;
+    
+}
+#light .profile-con h1{
+    font-size: 36px;
+  
+}
+#light .profile-con p{
+    font-size: 17px;
+}
+#light .about-icons{
+    width: 200px;
+    gap: 24px;
+}
+  .experience{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    gap:80px;
+    padding: 20px 2px;
+  }
+ #light .exp{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+ #light .exp p span{
+    font-size: 23px;
+  }
+  .reachout-bttn{
+    width: 75%;
+    height: 60px;
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .reach-div{
+    width: 45%;
+    height: 60px;
+  }
+ #light .d-cv{
+    font-size: 20px;
+    line-height: 30px;
+  }
+ #light .c-m{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #light .c-m:active{
+    transform: translateY(12%);
+  }
+  #light .box{
+    position: relative;
+    max-height: 190px;
+    min-height: 100px;
+    width: 40%;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    
+}
+#light .box1{
+    position: relative;
+    max-width: 45%;
+    min-width: 40%;
+    margin-bottom: 40px;
+}
+    
+}
+@media(max-width:480px){
+     #dark .App-logo {
+        position: absolute;
+        right: 0;
+    }
+    #dark .gallery{
+        width: 80%;
+         margin-top: 50px;
+         height: max-content;
+      }
+      #dark .ig-nav{
+        max-width: 95%;
+        height: 100px;
+     }
+    #dark .ig-nav div{
+        width: 20%;
+     }
+     .about-profile{
+        width: 65%;
+        height: 215px;
+        margin-top: 100px;
+      }
+    .profile-image-box{
+        width: 50%;
+        height: 100%;
+       
+    }
+    #dark .pib1{
+      border-radius: 100%;
+      height: 60%;
+    }
+    #dark .pib2{
+      border-radius: 100%;
+      height: 90%;
+      width: 92%;
+    }
+    #dark .profile-con{
+        margin-top: 29px;
+        margin-bottom: 29px;
+        width: 50%;
+        
+    }
+    #dark .profile-con h1{
+        font-size: 25px;
+        margin-left: 25px;
+      
+    }
+    #dark .profile-con p{
+        font-size: 17px;
+        margin-left: 25px;
+    }
+    #dark .about-icons{
+        width: 200px;
+        gap: 24px;
+    }
+    .about-icons img{
+      width: 20px;
+    }
+      .experience{
+        width: 100%;
+        margin: auto;
+        margin-top: 40px;
+        gap:2%;
+        padding: 20px 2px;
+       
+      }
+     #dark .exp{
+        font-size: 18px;
+        line-height: 30px;
+      }
+    
+     #dark .exp p span{
+        font-size: 20px;
+      }
+      .reachout-bttn{
+        width: 75%;
+        height: 60px;
+        margin-top: 30px;
+        gap: 30px;
+      }
+      .reach-div{
+        width: 45%;
+        height: 60px;
+      }
+     #dark .d-cv{
+        font-size: 20px;
+        line-height: 30px;
+      }
+     #dark .c-m{
+        font-size: 20px;
+        line-height: 30px;
+      }
+      #dark .c-m:active{
+        transform: translateY(12%);
+      }
+      #dark .box{
+        position: relative;
+        max-height: 190px;
+        min-height: 100px;
+        width: 40%;
+        margin-bottom: 40px;
+        border-radius: 15px;
+        
+    }
+    #dark .box1{
+        position: relative;
+        max-width: 45%;
+        min-width: 40%;
+        margin-bottom: 40px;
+    }
+
+    /* LIGHT */
+    #light .App-logo {
+      position: absolute;
+      left: 30%;
+      top: 0;
+  }
+  #light .gallery{
+      width: 80%;
+       margin-top: 50px;
+       height: max-content;
+    }
+  #light .ig-nav{
+    max-width: 95%;
+    height: 100px;
+   }
+  #light .ig-nav div{
+      width: 20%;
+   }
+   #light .about-profile{
+      width: 65%;
+      height: 215px;
+      margin-top: 100px;
+    }
+  #light .profile-image-box{
+      width: 50%;
+      height: 100%;
+     
+  }
+  #light .pib1{
+    border-radius: 100%;
+    height: 60%;
+  }
+  #light .pib2{
+    border-radius: 100%;
+    height: 90%;
+    width: 92%;
+  }
+  #light .profile-con{
+      margin-top: 29px;
+      margin-bottom: 29px;
+      width: 50%;
+      
+  }
+  #light .profile-con h1{
+      font-size: 25px;
+      margin-left: 25px;
+    
+  }
+  #light .profile-con p{
+      font-size: 17px;
+      margin-left: 25px;
+  }
+  #light .about-icons{
+      width: 200px;
+      gap: 24px;
+  }
+  .about-icons img{
+    width: 20px;
+  }
+    .experience{
+      width: 100%;
+      margin: auto;
+      margin-top: 40px;
+      gap:2%;
+      padding: 20px 2px;
+     
+    }
+   #light .exp{
+      font-size: 18px;
+      line-height: 30px;
+    }
+  
+   #light .exp p span{
+      font-size: 20px;
+    }
+    #light .reachout-bttn{
+      width: 75%;
+      height: 60px;
+      margin-top: 30px;
+      gap: 30px;
+    }
+    #light .reach-div{
+      width: 45%;
+      height: 60px;
+    }
+   #light .d-cv{
+      font-size: 20px;
+      line-height: 30px;
+    }
+   #light .c-m{
+      font-size: 20px;
+      line-height: 30px;
+    }
+    #light .c-m:active{
+      transform: translateY(12%);
+    }
+    #light .box{
+      position: relative;
+      max-height: 190px;
+      min-height: 100px;
+      width: 40%;
+      margin-bottom: 40px;
+      border-radius: 15px;
+      
+  }
+  #light .box1{
+      position: relative;
+      max-width: 45%;
+      min-width: 40%;
+      margin-bottom: 40px;
+  }
+}

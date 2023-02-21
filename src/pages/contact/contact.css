@@ -1,0 +1,242 @@
+#dark .contact-box{
+    font-family: 'poppins';
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -3px 3px 0px #D4AF37;
+}
+#dark .contact2{
+    margin-top: 100px;
+    width: 50%;
+    margin-bottom: 250px;
+}
+#dark .contact2 input{
+    width: 523.07px;
+    height: 85.13px;
+    margin-left: 5%;
+    margin-bottom: 18px;
+    font-size: 17px;
+
+
+background: #FFFFFF;
+border: 1.94722px solid rgba(0, 0, 0, 0.5);
+border-radius: 9.73611px;
+}
+#dark .contact2 input:placeholder-shown{
+    font-size: 14px;
+}
+#dark #big-input{
+    width: 523.07px;
+    height: 318.76px;
+margin-bottom: 50px;
+
+background: #FFFFFF;
+border: 1.94722px solid rgba(0, 0, 0, 0.5);
+border-radius: 9.73611px;
+}
+#dark .form-submit{
+padding: 9.73611px 29.2083px;
+width: 152.86px;
+background:#D4AF37;
+border-radius: 4.86806px;
+margin-left: 5%;
+}
+#dark .contact1{
+    width: 50%;
+    margin-top: -250px;
+
+}
+#dark .con1{
+    width: 80%;
+    margin: auto;
+    
+}
+#dark .con1 h1{
+    color: #D4AF37;
+    font-family: 'poppins';
+    font-weight: 700;
+}
+#dark .con1 p{
+    font-family: 'poppins';
+    color: white;
+}
+#dark .con2{
+    width: 40%;
+    display: flex;
+    gap: 15px;
+    margin-left: 15px;
+}
+#dark .con2 p{
+    font-size: 17px;
+}
+#dark .contact-foot-box{
+    width: 85%;
+    margin: auto;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    font-family: 'poppins';
+    box-shadow: 0px 3px 5px 2px #D4AF37;
+}
+#dark .cont1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 0px;
+    width: 30%;
+    font-size: 17px;
+    font-weight: 500;
+}
+.foot-box{
+    width: 100px;
+    height: 100px
+}
+.foot-box img{
+    width: 100%;
+    height: 100%;
+}
+#dark .cont2{
+    width: 15%;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-top: 50px;
+}
+#dark .bttm-hug{
+    width: 85.5%;
+    height: 50px;
+    margin: auto;
+    border-radius: 5px;
+}
+ .foot-title{
+    font-size:20px
+ }
+
+
+/* LIGHT MODE */
+
+#light .contact-box{
+    font-family: 'poppins';
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -3px 3px 0px #6565ff;
+}
+#light .contact2{
+    margin-top: 100px;
+    width: 50%;
+    margin-bottom: 250px;
+}
+#light .contact2 input{
+    width: 523.07px;
+    height: 85.13px;
+    margin-left: 5%;
+    margin-bottom: 18px;
+    font-size: 17px;
+
+
+background: #dddddd;
+border: 1.94722px solid rgba(255, 255, 255, 0.5);
+border-radius: 9.73611px;
+}
+#light .contact2 input:placeholder-shown{
+    font-size: 15px;
+}
+#light #big-input{
+    width: 523.07px;
+    height: 318.76px;
+margin-bottom: 50px;
+
+background: #dddddd;
+border: 1.94722px solid rgba(255, 255, 255, 0.5);
+border-radius: 9.73611px;
+}
+#light .form-submit{
+padding: 9.73611px 29.2083px;
+width: 152.86px;
+background:#6565ff;
+color: white;
+border-radius: 4.86806px;
+margin-left: 5%;
+border: white;
+}
+#light .contact1{
+    width: 50%;
+    margin-top: -250px;
+
+}
+#light .con1{
+    width: 80%;
+    margin: auto;
+    
+}
+#light .con1 h1{
+    color: #6565ff;
+    font-family: 'poppins';
+    font-weight: 700;
+}
+#light .con1 p{
+    font-family: 'poppins';
+    color: black;
+}
+#light .con2{
+    width: 40%;
+    display: flex;
+    gap: 15px;
+    margin-left: 15px;
+}
+#light .con2 p{
+    font-size: 17px;
+    color: #000000;
+}
+#light .contact-foot-box{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'poppins';
+    box-shadow: 0px 3px 5px 2px #6565ff;
+}
+#light .cont1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 0px;
+    width: 30%;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000000;
+}
+.foot-box{
+    width: 100px;
+    height: 100px
+}
+.foot-box img{
+    width: 100%;
+    height: 100%;
+}
+#light .cont2{
+    width: 15%;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    margin-top: 50px;
+}
+#light .bttm-hug{
+    width: 85.5%;
+    height: 50px;
+    margin: auto;
+    border-radius: 5px;
+}
