@@ -39,6 +39,7 @@ border: 1.94722px solid rgba(0, 0, 0, 0.5);
 border-radius: 9.73611px;
 }
 #dark .form-submit{
+cursor: pointer;
 padding: 9.73611px 29.2083px;
 width: 152.86px;
 background:#D4AF37;
@@ -162,6 +163,7 @@ border: 1.94722px solid rgba(255, 255, 255, 0.5);
 border-radius: 9.73611px;
 }
 #light .form-submit{
+cursor: pointer;
 padding: 9.73611px 29.2083px;
 width: 152.86px;
 background:#6565ff;

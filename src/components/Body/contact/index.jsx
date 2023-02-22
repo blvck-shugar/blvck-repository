@@ -1,8 +1,28 @@
-import React from 'react'
+import React, {useRef} from 'react';
+import emailjs from 'emailjs-com'
+
+
 
 export function ContactBody({theme}) {
+   const form = useRef();
+   
+   const sendEmail=(e) => {
+    e.preventDefault();
+  
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      form.current,
+      process.env.REACT_APP_USER_ID
+    ).then(
+      result => console.log(result.text),
+      error => console.log(error.text)
+    );
+    e.target.reset();
+  }
   return (
     <>
+    
       <div className='contact-box'>
 
         <div className='contact1'>
@@ -16,13 +36,13 @@ export function ContactBody({theme}) {
         </div>
 
         <div className='contact2'>
-        <div>
-            <input type="text" name="" id="" placeholder='Name' required/>
-            <input type="email" name="" id="" placeholder='Email' required/>
-            <input type="text" name="" id=""  placeholder='website'/>
-            <input type="text" name="" id="big-input" placeholder='Message'/>
-            <div><button className='form-submit'>Submit</button></div>
-        </div>
+        <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" id="" placeholder='Name' required/>
+            <input type="email" name="user_email" id="" placeholder='Email' required/>
+            <input type="text" name="user_site" id=""  placeholder='website'/>
+            <input type="text" name="user_message" id="big-input" placeholder='Message'/>
+            <button className='form-submit' type='submit' value="Send">Submit</button>
+        </form>
         </div>
       </div>
       <div className='contact-foot-box'>
@@ -64,3 +84,5 @@ export function ContactBody({theme}) {
     </>
   )
 }
+ 
+
